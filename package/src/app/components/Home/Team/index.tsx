@@ -1,25 +1,32 @@
 import React from 'react'
-import Image from 'next/image'
 
 const Team = () => {
   return (
-    <section className='overflow-x-hidden'>
+    <section id='work' className='overflow-x-hidden'>
       <div className='container mx-auto max-w-7xl px-4 relative'>
-        <h2 className='text-center max-w-5xl mx-auto'>
-          Our team belives you deserve only the best.
+        <p className='text-center text-primary text-lg tracking-widest uppercase mb-4'>
+          our team
+        </p>
+        <h2 className='text-center max-w-3xl mx-auto mb-8'>
+          A lean, senior-led NZ team obsessed with results.
         </h2>
-        <h5 className='font-medium text-center pt-10 text-black/50 max-w-3xl mx-auto'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor.
-        </h5>
-        <div className='grid grid-cols-1 mt-16'>
-          <Image
-            src='/images/team/team.webp'
-            alt='office-image'
-            height={684}
-            width={1296}
-            className='relative z-1 rounded-3xl'
-          />
+        <p className='text-xl font-medium text-center text-black/50 max-w-2xl mx-auto mb-16'>
+          No juniors handed your account. No offshore handoffs. Every client
+          works directly with senior strategists who know the NZ market inside
+          out.
+        </p>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto'>
+          {[
+            { label: 'NZ Based & Operated' },
+            { label: 'Senior Strategists Only' },
+            { label: 'Direct Client Access' },
+          ].map((item, i) => (
+            <div
+              key={i}
+              className='bg-grey rounded-3xl p-10 text-center'>
+              <p className='text-lg font-bold text-black'>{item.label}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

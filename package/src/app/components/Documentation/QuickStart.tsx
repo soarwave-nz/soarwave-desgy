@@ -79,7 +79,7 @@ export const QuickStart = () => {
           <p className="text-sm text-black/60">npm run build or yarn build</p>
         </div>
         <p className="text-base font-medium text-muted/60 mt-6">
-          Finally, Your webiste is ready to be deployed.🥳
+          Finally, Your webiste is ready to be deployed.
         </p>
       </div>
     </div>

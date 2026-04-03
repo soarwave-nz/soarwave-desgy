@@ -36,12 +36,14 @@
   --z-index-2: 2;
   --z-index-999: 999;
 
-  --color-primary: #0066ff;
-  --color-purple: #1e013a;
+  --color-primary: #4AABDB;
+  --color-purple: #7B5EA7;
+  --color-orange: #E8793A;
+  --color-green: #5BB85D;
   --color-grey: #f4f5f6;
   --color-border: #dbdbdb;
-  --color-darkmode: #00224a;
-  --color-deep-slate: #02398a;
+  --color-darkmode: #0A0C12;
+  --color-deep-slate: #3A9BC9;
 
   --text-80: 5rem;
   --text-65: 4.063rem;
@@ -100,6 +102,11 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 

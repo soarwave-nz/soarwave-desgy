@@ -16,7 +16,9 @@ import Insta from '@/app/components/Home/Insta'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Desgy Solutions',
+  title: 'Soarwave — Your Growth, Amplified',
+  description:
+    "New Zealand's boldest social media marketing agency. We amplify brands through strategic social media management, paid ads, brand design & campaign management.",
 }
 
 export default function Home() {

@@ -10,11 +10,10 @@ import { footerlinks } from '@/app/types/footerlinks'
 
 // header nav-links data
 const headerData: HeaderItem[] = [
-  { label: 'About Us', href: '#About' },
-  { label: 'Team', href: '#Team' },
-  { label: 'FAQ', href: '#FAQ' },
+  { label: 'Services', href: '#services' },
+  { label: 'Work', href: '#work' },
   { label: 'Blog', href: '#Blog' },
-  { label: 'Docs', href: '/documentation' },
+  { label: 'Contact', href: '#contact' },
 ]
 
 // about data
@@ -252,36 +251,28 @@ const ArticlesData: articles[] = [
 // footer links data
 const FooterLinksData: footerlinks[] = [
   {
-    section: 'Menu',
+    section: 'Services',
+    links: [
+      { label: 'Social Media Management', href: '#services' },
+      { label: 'Paid Ads', href: '#services' },
+      { label: 'Brand Strategy', href: '#services' },
+      { label: 'Campaign Management', href: '#services' },
+    ],
+  },
+  {
+    section: 'Company',
     links: [
       { label: 'About Us', href: '#About' },
-      { label: 'Team', href: '#Team' },
-      { label: 'FAQ', href: '#FAQ' },
+      { label: 'Work', href: '#work' },
       { label: 'Blog', href: '#Blog' },
+      { label: 'Contact', href: '#contact' },
     ],
   },
   {
-    section: 'Category',
+    section: 'Legal',
     links: [
-      { label: 'Design', href: '/' },
-      { label: 'Mockup', href: '/' },
-      { label: 'View all', href: '/' },
-      { label: 'Log In', href: '/' },
-    ],
-  },
-  {
-    section: 'Pages',
-    links: [
-      { label: '404', href: '/' },
-      { label: 'Instructions', href: '/' },
-      { label: 'License', href: '/' },
-    ],
-  },
-  {
-    section: 'Others',
-    links: [
-      { label: 'Styleguide', href: '/' },
-      { label: 'Changelog', href: '/' },
+      { label: 'Privacy Policy', href: '/' },
+      { label: 'Terms of Service', href: '/' },
     ],
   },
 ]

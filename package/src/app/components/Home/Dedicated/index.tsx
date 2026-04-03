@@ -1,55 +1,64 @@
 'use client'
 import React from 'react'
-import Image from 'next/image'
+import Link from 'next/link'
 
 const Dedicated = () => {
   return (
     <section className='relative bg-cover bg-center overflow-hidden'>
       <div className='container mx-auto max-w-7xl px-4'>
-        <div className='grid grid-cols-1 lg:grid-cols-12 gap-5'>
-          <Image
-            src='/images/dedicated/spiral.svg'
-            height={272}
-            width={686}
-            alt='spiral-design'
-            className='absolute left-0 top-0 hidden lg:block -z-10'
-          />
-          {/* Left Column */}
-          <div className='col-span-12 lg:col-span-6 justify-self-center'>
-            <Image
-              src='/images/dedicated/man.svg'
-              alt='man-icon'
-              width={416}
-              height={530}
-              className='mx-auto md:mx-0'
-            />
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-16 items-center'>
+          {/* Left — stats */}
+          <div className='grid grid-cols-2 gap-6'>
+            {[
+              { number: '50+', label: 'Happy Clients' },
+              { number: '3M+', label: 'Monthly Reach' },
+              { number: '98%', label: 'Client Retention' },
+              { number: '4+', label: 'Years Experience' },
+            ].map((stat, i) => (
+              <div
+                key={i}
+                className='bg-grey rounded-3xl p-8 text-center'>
+                <p className='text-5xl font-extrabold text-primary mb-2'>
+                  {stat.number}
+                </p>
+                <p className='text-base font-semibold text-black/60 uppercase tracking-wider'>
+                  {stat.label}
+                </p>
+              </div>
+            ))}
           </div>
 
-          {/* Right Column */}
-          <div className='col-span-12 lg:col-span-6'>
-            <div className='relative'>
-              <Image
-                src='/images/dedicated/comma.svg'
-                alt='comma-image'
-                width={200}
-                height={106}
-                className='absolute -top-16 -left-32 hidden lg:block'
-              />
-            </div>
-            <h2 className='text-center -mr-1 lg:text-start lg:leading-20 leading-14'>
-              “Dedicated to help people’s design needs.”
-            </h2>
-            <p className='text-xl font-medium text-black/55 mt-5 text-center lg:text-start'>
-              Quis ipsum suspendisse ultrices gravida risus commodo viverra
-              maecenas accumsan lacus vel facilisis
+          {/* Right — copy */}
+          <div>
+            <p className='text-primary text-lg font-bold tracking-widest uppercase mb-4'>
+              About Soarwave
             </p>
-            <h5 className='mt-12 lg:pl-32 relative lg:before:block before:hidden before:absolute before:bg-black before:h-0.5 before:w-24 before:left-0 before:bottom-1/2 text-center lg:text-start'>
-              Cathy Hills, CEO
-            </h5>
+            <h2 className='leading-tight mb-6'>
+              We help NZ brands{' '}
+              <span style={{ color: '#E8793A' }}>punch above</span> their
+              weight.
+            </h2>
+            <p className='text-xl font-medium text-black/60 mb-5 leading-relaxed'>
+              Soarwave was born from a simple belief: New Zealand businesses
+              deserve world-class marketing, not watered-down offshore
+              strategies. We&apos;re a lean, senior-led team obsessed with
+              outcomes.
+            </p>
+            <p className='text-xl font-medium text-black/60 mb-10 leading-relaxed'>
+              From Wellington startups to Auckland scaleups, we partner with
+              brands ready to invest in real growth. No vanity metrics. No
+              fluff. Just compounding, measurable results.
+            </p>
+            <Link
+              href='#contact'
+              className='text-xl py-5 px-14 font-semibold text-white rounded-full bg-primary border border-primary hover:opacity-90 transition-opacity'>
+              Work With Us
+            </Link>
           </div>
         </div>
       </div>
     </section>
   )
 }
+
 export default Dedicated
